@@ -2,19 +2,19 @@
   "name": "水質調査アプリ",
   "short_name": "水質調査",
   "description": "水質調査用の入力アプリ",
-  "start_url": "https://script.google.com/macros/s/AKfycbxVXV1VXFAhUqZX972ewB4IL71OD0Am6gCKevLBzV0a-1IA_JAGsZzv154aW5pf-1Mzrg/exec",
-  "scope": "https://script.google.com/macros/s/",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "display",
   "background_color": "#f0f8ff",
   "theme_color": "#1a73e8",
   "icons": [
     {
-      "src": "https://hamanamidesign.github.io/h2o/icon-h2o-192.png",
+      "src": "./icon-h2o-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://hamanamidesign.github.io/h2o/icon-h2o-512.png",
+      "src": "./icon-h2o-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
