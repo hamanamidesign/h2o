@@ -3,7 +3,7 @@
   "short_name": "水質調査",
   "start_url": "./index.html",
   "scope": "./",
-  "display": "display",
+  "display": "browser",
   "background_color": "#f0f8ff",
   "theme_color": "#1a73e8",
   "icons": [
