@@ -15,15 +15,65 @@
   <link rel="icon" type="image/png" sizes="192x192" href="./icon-h2o-192.png">
   <link rel="apple-touch-icon" href="./icon-h2o-192.png">
 
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f0f8ff;
+      color: #1f2937;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .box {
+      padding: 24px;
+    }
+
+    img {
+      width: 96px;
+      height: 96px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    button {
+      width: 100%;
+      max-width: 280px;
+      padding: 16px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      background: #1a73e8;
+      color: white;
+    }
+  </style>
+
   <script>
     const GAS_URL = "https://script.google.com/macros/s/AKfycbxVXV1VXFAhUqZX972ewB4IL71OD0Am6gCKevLBzV0a-1IA_JAGsZzv154aW5pf-1Mzrg/exec";
 
+    function openApp() {
+      location.replace(GAS_URL);
+    }
+
     window.onload = function() {
-      location.href = GAS_URL;
+      const isStandalone =
+        window.matchMedia("(display-mode: standalone)").matches ||
+        window.navigator.standalone === true;
+
+      if (isStandalone) {
+        openApp();
+      }
     };
   </script>
 </head>
 <body>
-  <p>水質調査アプリを起動しています...</p>
+  <div class="box">
+    <img src="./icon-h2o-192.png" alt="水質調査アプリ">
+    <h1>水質調査アプリ</h1>
+    <button onclick="openApp()">起動する</button>
+  </div>
 </body>
 </html>
