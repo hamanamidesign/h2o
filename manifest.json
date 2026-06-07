@@ -1,7 +1,6 @@
 {
   "name": "水質調査アプリ",
   "short_name": "水質調査",
-  "description": "水質調査用の入力アプリ",
   "start_url": "./index.html",
   "scope": "./",
   "display": "display",
@@ -9,12 +8,12 @@
   "theme_color": "#1a73e8",
   "icons": [
     {
-      "src": "./icon-h2o-192.png",
+      "src": "./icon-h2o.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./icon-h2o-512.png",
+      "src": "./icon-h2o.png",
       "sizes": "512x512",
       "type": "image/png"
     }
