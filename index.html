@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>水質調査アプリ</title>
+
+  <meta name="theme-color" content="#1a73e8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="水質調査">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icon-h2o-192.png">
+  <link rel="apple-touch-icon" href="./icon-h2o-192.png">
+
+  <script>
+    const GAS_URL = "GAS_WEB_APP_URL_HERE";
+
+    window.onload = function() {
+      location.href = GAS_URL;
+    };
+  </script>
+</head>
+<body>
+  <p>水質調査アプリを起動しています...</p>
+</body>
+</html>
